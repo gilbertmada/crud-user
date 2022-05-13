@@ -1,8 +1,10 @@
+import express from "express";
+import userRoute from "./user/index.js";
 
-const express = require('express')
-const userRoute = require('./user')
-
- const route = express.Router()
- route.use('/',userRoute )
-      //.use('/', contactRoute)
- module.exports = route
+const route = express.Router();
+route.use("/user", userRoute);
+//.use('/', contactRoute)
+route.get("/", async (req, res) => {
+  res.send("Api is ok");
+});
+export default route;

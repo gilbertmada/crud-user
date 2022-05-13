@@ -1,16 +1,20 @@
 {
-  "name": "qpi",
+  "name": "api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./src/index.js"
+    "start": "nodemon  --experimental-modules ./src/index.js"
   },
   "author": "tes",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.2"
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.7",
+    "react-crud-table": "^0.3.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
