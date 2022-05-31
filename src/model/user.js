@@ -4,6 +4,7 @@ const UserSchema = new mongoose.Schema(
     firstName: {
       type: String,
       required: true,
+      default: "",
     },
     lastName: {
       type: String,
@@ -13,6 +14,7 @@ const UserSchema = new mongoose.Schema(
     email: {
       type: String,
       required: true,
+      default: "",
     },
   },
   { timestamps: true }
